@@ -1,6 +1,7 @@
 package mongodb;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,11 @@ public class test {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Before
+    public void setUp() {
+        userRepository.deleteAll();
+    }
 
     @Test
     public void Test() throws Exception{
