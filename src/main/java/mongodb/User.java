@@ -1,9 +1,7 @@
 package mongodb;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
 
 /**
  * Created by Yuwei on 2017/11/6.
@@ -15,6 +13,10 @@ public class User {
     private Long id;
     private String name;
     private Integer age;
+
+    public User(){
+
+    }
 
     public User(Long id, String name, Integer age) {
         this.id = id;

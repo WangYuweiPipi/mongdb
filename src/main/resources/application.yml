@@ -1,9 +1,11 @@
 spring:
-  data:
-    host: 10.7.121.251
-    port: 27017
-    database: user
-    username: root
-    password: 111111
-    uri: mongodb://name:pass@localhost:27017/user
+    data:
+        mongodb:
+          host: localhost
+          port: 27017
+          database: user
+          uri: mongodb://root:111111@localhost:27017/user
+
+server:
+    port: 30000
 
