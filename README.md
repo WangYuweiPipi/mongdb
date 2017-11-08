@@ -1,4 +1,2 @@
-# mongodb
-
-## Springboot+mongodb
-springboot+mongodbRepository的简单配置和插入查询
+# Springboot+mongodb
+springboot+mongodbRepository的简单配置和插入查询操作
